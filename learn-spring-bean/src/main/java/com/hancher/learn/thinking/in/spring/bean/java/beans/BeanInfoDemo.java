@@ -1,6 +1,6 @@
-package com.hancher.learn.bean.java.beans;
+package com.hancher.learn.thinking.in.spring.bean.java.beans;
 
-import com.hancher.learn.bean.domain.PersonModel;
+import com.hancher.learn.thinking.in.spring.bean.domain.PersonModel;
 
 import java.beans.*;
 import java.lang.reflect.InvocationTargetException;

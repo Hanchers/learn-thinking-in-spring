@@ -1,11 +1,10 @@
-package com.hancher.learn.bean.definition;
+package com.hancher.learn.thinking.in.spring.bean.definition;
 
-import com.hancher.learn.bean.factory.DefaultUserFactory;
-import com.hancher.learn.bean.factory.UserFactory;
+import com.hancher.learn.thinking.in.spring.bean.factory.DefaultUserFactory;
+import com.hancher.learn.thinking.in.spring.bean.factory.UserFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
 
 /**
  * Bean 初始化顺序 demo

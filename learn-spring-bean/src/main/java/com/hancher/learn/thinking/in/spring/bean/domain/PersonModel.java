@@ -1,4 +1,4 @@
-package com.hancher.learn.bean.domain;
+package com.hancher.learn.thinking.in.spring.bean.domain;
 /**
  * 人员bean类
  * setter / getter 方法

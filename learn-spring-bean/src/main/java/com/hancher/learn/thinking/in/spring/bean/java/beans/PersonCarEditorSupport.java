@@ -1,6 +1,6 @@
-package com.hancher.learn.bean.java.beans;
+package com.hancher.learn.thinking.in.spring.bean.java.beans;
 
-import com.hancher.learn.bean.domain.CarModel;
+import com.hancher.learn.thinking.in.spring.bean.domain.CarModel;
 
 import java.beans.PropertyEditorSupport;
 

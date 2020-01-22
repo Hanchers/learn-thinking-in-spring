@@ -1,4 +1,4 @@
-package com.hancher.learn.bean.definition;
+package com.hancher.learn.thinking.in.spring.bean.definition;
 
 import com.hancher.learn.thinking.in.spring.ioc.domain.UserModel;
 import org.springframework.beans.factory.BeanFactory;

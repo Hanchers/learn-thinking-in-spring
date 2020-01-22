@@ -1,4 +1,4 @@
-package com.hancher.learn.bean.domain;
+package com.hancher.learn.thinking.in.spring.bean.domain;
 
 public class CarModel {
     private String name;

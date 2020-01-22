@@ -1,6 +1,6 @@
-package com.hancher.learn.bean.definition;
+package com.hancher.learn.thinking.in.spring.bean.definition;
 
-import com.hancher.learn.bean.domain.PersonModel;
+import com.hancher.learn.thinking.in.spring.bean.domain.PersonModel;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PersonCarEditor {
