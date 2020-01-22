@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  定义PersonCar 对应的bean  -->
+    <bean id="hancher" class="com.hancher.learn.bean.domain.PersonModel">
+        <property name="name" value="hacher"/>
+        <property name="age" value="22"/>
+        <property name="car" value="奔驰,白色,22"/>
+    </bean>
+
+    <!-- 配置自动注册的属性编辑器   -->
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <!--  设置属性编辑器对应的属性类型 -->
+            <map>
+                <entry key="com.hancher.learn.bean.domain.CarModel"
+                       value="com.hancher.learn.bean.java.beans.PersonCarEditorSupport"/>
+            </map>
+        </property>
+    </bean>
+</beans>
