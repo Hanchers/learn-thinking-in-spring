@@ -92,4 +92,13 @@ public class UserModel {
                 ", configFileLocation=" + configFileLocation +
                 '}';
     }
+
+    public static UserModel createUser() {
+        UserModel userModel = new UserModel();
+        userModel.setId(1L);
+        userModel.setName("寒澈");
+        userModel.setCity(CityEnum.BEIJING);
+
+        return userModel;
+    }
 }
