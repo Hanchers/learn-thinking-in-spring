@@ -13,6 +13,13 @@
 
     <!-- 依赖   -->
     <dependencies>
+        <!-- 复用 ioc-container-overview</artifactId> -->
+        <dependency>
+            <groupId>${groupId}</groupId>
+            <artifactId>ioc-container</artifactId>
+            <version>${version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
