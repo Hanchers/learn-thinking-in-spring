@@ -16,4 +16,22 @@ public interface UserFactory {
     default UserModel createUser() {
         return UserModel.createUser();
     }
+
+
+    /**
+     * 初始化工厂实例方法
+     * @author Hancher
+     * @date  2020年01月22日  19:35
+     * @since 1.0
+     */
+    default void initUserFactory() {};
+
+
+    /**
+     * 销毁工厂实例方法
+     * @author Hancher
+     * @date  2020年01月22日  19:36
+     * @since 1.0
+     */
+    default void doDestroy(){};
 }

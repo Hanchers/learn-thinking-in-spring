@@ -3,6 +3,8 @@ package com.hancher.learn.thinking.in.spring.ioc.domain;
 import com.hancher.learn.thinking.in.spring.ioc.enums.CityEnum;
 import org.springframework.core.io.Resource;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.Arrays;
 import java.util.List;
 
@@ -93,6 +95,14 @@ public class UserModel {
                 '}';
     }
 
+    /**
+     * 用户创建工具类
+     * @param
+     * @author Hancher
+     * @date  2020年01月22日  19:26
+     * @since 1.0
+     * @return
+     */
     public static UserModel createUser() {
         UserModel userModel = new UserModel();
         userModel.setId(1L);
@@ -100,5 +110,27 @@ public class UserModel {
         userModel.setCity(CityEnum.BEIJING);
 
         return userModel;
+    }
+
+    /**
+     * 实例初始化方法
+     * @author Hancher
+     * @date  2020年01月22日  19:26
+     * @since 1.0
+     */
+    @PostConstruct
+    public void init() {
+        System.out.println("User Bean [" + beanName + "] 初始化...");
+    }
+
+    /**
+     * 实例销毁方法
+     * @author Hancher
+     * @date  2020年01月22日  19:27
+     * @since 1.0
+     */
+    @PreDestroy
+    public void destroy() {
+        System.out.println("User Bean [" + beanName + "] 销毁中...");
     }
 }
