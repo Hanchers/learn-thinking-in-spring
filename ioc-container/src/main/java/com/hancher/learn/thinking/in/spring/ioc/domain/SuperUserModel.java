@@ -16,6 +16,8 @@
  */
 package com.hancher.learn.thinking.in.spring.ioc.domain;
 
+import com.hancher.learn.thinking.in.spring.ioc.annotation.Super;
+
 /**
  * 超级用户
  *
@@ -25,7 +27,7 @@ package com.hancher.learn.thinking.in.spring.ioc.domain;
  * @version 1.0
  * @since 1.0
  */
-//@Super
+@Super
 public class SuperUserModel extends UserModel {
 
     private String address;
