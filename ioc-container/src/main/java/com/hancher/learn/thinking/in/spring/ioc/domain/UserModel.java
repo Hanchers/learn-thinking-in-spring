@@ -1,6 +1,7 @@
 package com.hancher.learn.thinking.in.spring.ioc.domain;
 
 import com.hancher.learn.thinking.in.spring.ioc.enums.CityEnum;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.core.io.Resource;
 
 import javax.annotation.PostConstruct;
@@ -17,7 +18,7 @@ import java.util.List;
  * @version 1.0
  * @since 1.0
  */
-public class UserModel {
+public class UserModel implements BeanNameAware {
     private Long id;
 
     private String name;
@@ -132,5 +133,11 @@ public class UserModel {
     @PreDestroy
     public void destroy() {
         System.out.println("User Bean [" + beanName + "] 销毁中...");
+    }
+
+    @Override
+    public void setBeanName(String name) {
+        this.beanName = name;
+        System.out.println("BeanNameAware setBeanName = "+name);
     }
 }

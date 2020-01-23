@@ -1,0 +1,4 @@
+# ServiceLoader 中配置
+com.hancher.learn.thinking.in.spring.bean.factory.DefaultUserFactory
+# 重复会去重
+com.hancher.learn.thinking.in.spring.bean.factory.DefaultUserFactory
